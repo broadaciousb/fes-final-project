@@ -115,8 +115,6 @@ a {
 }
 
 .header__email-container {
-  display: flex;
-  justify-content: space-between;
   position: relative;
   text-align: center;
   width: 90%;
