@@ -220,6 +220,7 @@ a {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
 }
 
 .features__para {
@@ -238,9 +239,11 @@ a {
   justify-content: center;
   align-items: start;
   width: calc(100% / 3);
+  margin: 32px auto;
 }
 
 .quality__img{
+  display: flex;
   padding: 16px;
 }
 
@@ -259,4 +262,5 @@ a {
 
 .quality__info--para {
   font-size: 16px;
+  max-width: 200px;
 }
