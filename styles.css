@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+section {
+  height: 100vh;
+}
+
 .row {
   width: 100%;
   max-width: 1200px;
@@ -91,11 +95,21 @@ a {
   color: black;
 }
 
-.header__container {
+.nav__button {
+  border-radius: 999px;
+  padding: 12px 24px;
+  color: white;
+  font-weight: 700;
+  background: #6415ff;
+  border-width: 0;
+}
+
+.header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin: 40px auto;
 }
 
 .header__title {
@@ -123,7 +137,13 @@ a {
 .header__email-input {
   width: 100%;
   padding: 20px;
+  border-style: solid;
+  border-width: 2-x;
   border-radius: 999px;
+  border-color: rgba(160, 174, 192);
+  font-size: 100%;
+  font-weight: 500;
+  opacity: 0.5;
 }
 
 .email__button {
@@ -133,7 +153,7 @@ a {
   bottom: 0;
   margin: 6px;
   border-radius: 999px;
-  width: 25%;
+  padding: 8px 40px;
   color: white;
   font-weight: 700;
   background: #6415ff;
@@ -143,7 +163,19 @@ a {
 .trusted__customers {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-top: 80px;
+  color: rgba(160, 174, 192);
+  font-weight: 700;
+  font-size: 12px;
+}
+
+
+.trusted__customer--img {
+  display: flex;
+  margin-top: 16px;
+  width: 80%;
+  opacity: 0.5;
 }
 
 .header__img--wrapper {
