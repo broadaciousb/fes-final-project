@@ -58,6 +58,7 @@ button {
 }
 
 img {
+  display: flex;
   width: 100%;
 }
 
@@ -218,10 +219,6 @@ img {
   width: 60%;
 }
 
-.header__img {
-  display: flex;
-  width: 100%;
-}
 
 
 /* FEATURES */
@@ -291,13 +288,15 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
 }
 
 .quality__info {
   display: flex;
   flex-direction: column;
   align-items: start;
-  max-width: 50%;
+  width: 50%;
+  padding-right: 64px;
 }
 
 .quality__button {
@@ -306,19 +305,10 @@ img {
 }
 
 .quality-img {
-  max-width: 100%;
-}
-
-.quality__img--wrapper {
   display: flex;
   width: 50%;
 }
 
-.quality__img {
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
 
 
 
