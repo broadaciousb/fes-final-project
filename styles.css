@@ -29,7 +29,7 @@ h1 {
 
 h2 {
   color:#6415ff;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 700;
   margin-bottom: 16px;
 }
@@ -46,6 +46,19 @@ li {
 
 a {
   text-decoration: none;
+}
+
+button {
+  border-radius: 999px;
+  padding: 8px 40px;
+  color: white;
+  font-weight: 700;
+  background: #6415ff;
+  border-width: 0;
+}
+
+img {
+  width: 100%;
 }
 
 .container {
@@ -119,12 +132,8 @@ a {
 }
 
 .nav__button {
-  border-radius: 999px;
   padding: 12px 32px;
-  color: white;
   font-weight: 600;
-  background: #6415ff;
-  border-width: 0;
 }
 
 .header__wrapper {
@@ -177,12 +186,8 @@ a {
   top: 0;
   bottom: 0;
   margin: 6px;
-  border-radius: 999px;
   padding: 8px 40px;
-  color: white;
   font-weight: 700;
-  background: #6415ff;
-  border-width: 0;
 }
 
 .trusted__customers {
@@ -282,9 +287,9 @@ a {
 
 /* QUALITY */
 
-.quality__container {
+.quality__wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -292,14 +297,54 @@ a {
   display: flex;
   flex-direction: column;
   align-items: start;
-  width: 50%;
+  max-width: 50%;
+}
+
+.quality__button {
+  padding: 12px 32px;
+  margin-top: 32px;
+}
+
+.quality-img {
+  max-width: 100%;
 }
 
 .quality__img--wrapper {
-  
+  display: flex;
+  width: 50%;
 }
 
 .quality__img {
   display: flex;
   width: 100%;
+  height: 100%;
+}
+
+
+
+/* STEPS */
+
+.steps__row {
+  display: flex;
+}
+
+.steps__img--wrapper {
+  display: flex;
+  width: 50%;
+}
+
+.steps__img {
+  display: flex;
+  width: 100%;
+}
+
+.step__number {
+  font-weight: 600;
+  font-size: 36px;
+  color: #CBD5E0
+}
+
+.step__info--name {
+  font-size: 20px;
+  font-weight: 600;
 }
