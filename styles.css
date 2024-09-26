@@ -477,8 +477,14 @@ img {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  width: calc(100%/3);
   border: 1px solid rgb(226, 232, 240);
-  padding: 24px 32px;
+  border-radius: 8px;
+  padding: 32px 0;
+}
+
+.center__plan {
+  margin: 0 40px;
 }
 
 .plan__title {
@@ -500,4 +506,15 @@ img {
   color:#A0ACE0;
   font-weight: 700;
   margin: 0 auto;
+}
+
+.plan__feature {
+  width: 100%;
+  border-top: solid 2px rgb(226, 232, 240);
+  border-bottom: solid 2px rgb(226, 232, 240);
+}
+
+.plan__title,
+.plan__feature {
+  padding: 24px 56px;
 }
