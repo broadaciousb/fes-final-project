@@ -452,3 +452,52 @@ img {
   padding: 12px 32px;
   margin-top: 32px;
 }
+
+
+
+/* PRICING */
+
+
+.pricing__row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.price__plans {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(226, 232, 240);
+  padding: 24px 32px;
+}
+
+.plan__title {
+  padding: 32px 0;
+}
+
+.plan__name,
+.plan__price,
+.plan__for {
+  color: #1A202C;
+  font-weight: 700;
+}
+
+.plan__price {
+  margin: 8px 0;
+}
+
+.plan__duration {
+  color:#A0ACE0;
+  font-weight: 700;
+  margin: 0 auto;
+}
