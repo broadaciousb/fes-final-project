@@ -35,6 +35,10 @@ h2 {
   margin-bottom: 16px;
 }
 
+h3 {
+  font-size: 20px;
+}
+
 p {
   color: #7c8ba1;
   font-size: 18px;
@@ -667,4 +671,35 @@ img {
 
 .nav__divider {
   border-right: 1px solid #EDF2F7;
+}
+
+
+
+/*  FACTS  */
+
+.facts__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.fact__questions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  color: #2D3748;
+  width: 90%;
+  margin: 12px 0;
+  padding: 16px 40px;
+  background-color: #EDF2F7;
+  border-radius: 8px;
 }
