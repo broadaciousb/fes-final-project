@@ -703,3 +703,47 @@ img {
   background-color: #EDF2F7;
   border-radius: 8px;
 }
+
+
+/*  GET STARTED  */
+
+.get__started {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  background-color: #6415ff;
+  padding: 104px 64px;
+  border-radius: 8px;
+}
+
+.get__started--description {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  text-align: left;
+  width: 50%;
+}
+
+.get__started--buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  max-width: 400px;
+}
+
+.get__started--button,
+.contact__button {
+  padding: 20px 40px;
+}
+
+.get__started--button {
+  background-color: rgb(245 101 101);
+}
+
+.contact__button {
+  border: 1px solid white;
+}
