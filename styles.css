@@ -39,6 +39,13 @@ h3 {
   font-size: 20px;
 }
 
+
+h5 {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 24px;
+}
+
 p {
   color: #7c8ba1;
   font-size: 18px;
@@ -66,6 +73,7 @@ img {
   display: flex;
   width: 100%;
 }
+
 
 .container {
   padding: 32px;
@@ -746,4 +754,33 @@ img {
 
 .contact__button {
   border: 1px solid white;
+}
+
+
+/* COMPANY INFO  */
+
+.footer__container {
+  background-color: #6415ff;
+}
+
+
+.company__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 64px 24px;
+  max-width: 1200px;
+}
+
+.company__info--column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+}
+
+.company__info--link {
+  font-size: 14px;
+  color: white;
+  margin: 8px 0;
 }
