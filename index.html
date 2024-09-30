@@ -7,44 +7,65 @@
   <title>Document</title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://kit.fontawesome.com/a9dfca619b.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
 </head>
 
 <body>
   <section id="landing">
-    <div class="row">
-      <nav>
-        <div class="nav__container">
-          <div class="nav__logo">
-            <a href="">
-              <img class="logo" src="https://treact.owaiskhan.me/static/media/logo.2c489fc453a1783cbadacf914efa3df6.svg"
-                alt="">
-            </a>
-            <div>Treact</div>
+    <div class="container">
+      <div class="row">
+        <nav>
+          <div class="nav__container">
+            <div class="nav__logo">
+              <a href="">
+                <img class="logo" src="https://treact.owaiskhan.me/static/media/logo.2c489fc453a1783cbadacf914efa3df6.svg"
+                  alt="">
+              </a>
+              <div>Treact</div>
+            </div>
+            <div class="link__container">
+              <ul class="nav__links">
+                <li>
+                  <a href="#about" class="nav__link">About</a>
+                </li>
+                <li>
+                  <a href="#about" class="nav__link">Blog</a>
+                </li>
+                <li>
+                  <a href="#about" class="nav__link">Pricing</a>
+                </li>
+                <li>
+                  <a href="#about" class="nav__link contact__link">Contact Us</a>
+                </li>
+                <li>
+                  <a href="" class="nav__link">Login</a>
+                </li>
+                <li>
+                  <button class="nav__button purple__button">Sign Up</button>
+                </li>
+              </ul>
+            </div>
+            <button class="btn__menu" onclick="openMenu()">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="menu__backdrop">
+              <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <i class="fas fa-times"></i>
+              </button>
+              <ul class="menu__links">
+                <li class="menu__list"><a href="" class="menu__link" onclick="closeMenu()">About</a></li>
+                <li class="menu__list"><a href="" class="menu__link" onclick="closeMenu()">Blog</a></li>
+                <li class="menu__list"><a href="" class="menu__link" onclick="closeMenu()">Pricing</a></li>
+                <li class="menu__list"><a href="" class="menu__link" onclick="closeMenu()">Contact Us</a></li>
+                <li class="menu__list"><a href="" class="menu__link" onclick="closeMenu()">Login</a></li>
+                <li>
+                  <button class="nav__button purple__button">Sign Up</button>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="link__container">
-            <ul class="nav__links">
-              <li>
-                <a href="#about" class="nav__link">About</a>
-              </li>
-              <li>
-                <a href="#about" class="nav__link">Blog</a>
-              </li>
-              <li>
-                <a href="#about" class="nav__link">Pricing</a>
-              </li>
-              <li>
-                <a href="#about" class="nav__link contact__link">Contact Us</a>
-              </li>
-              <li>
-                <a href="" class="nav__link">Login</a>
-              </li>
-              <li>
-                <button class="nav__button">Sign Up</button>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </div>
     <header>
       <div class="container">
@@ -60,7 +81,7 @@
               </p>
               <div class="header__email-container">
                 <input type="text" class="header__email-input" placeholder="Your E-mail Adress">
-                <button class="email__button">Get Started</button>
+                <button class="email__button purple__button">Get Started</button>
               </div>
               <div class="trusted__customers">
                 <p class="trusted__customers--title">OUR TRUSTED CUSTOMERS</p>
@@ -158,21 +179,19 @@
   </section>
   <section id="quality">
     <div class="container">
-      <div class="row">
-        <div class="quality__wrapper">
+      <div class="row quality__row">
           <div class="quality__info">
-            <h2>QUALITY WORK</h2>
-            <h1>Designed & Developed by <span class="purple__text">Professionals.</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea recusandae nisi, ipsum amet temporibus
+            <h2 class="section--title">QUALITY WORK</h2>
+            <h1 class="section--subject">Designed & Developed by <span class="purple__text">Professionals.</span></h1>
+            <p class="section--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea recusandae nisi, ipsum amet temporibus
               quisquam
               doloremque, nesciunt excepturi cumque ut laudantium harum in nobis debitis cum laborum blanditiis ducimus
               fugit.</p>
-            <button class="quality__button">Learn More</button>
+            <button class="quality__button purple__button">Learn More</button>
           </div>
           <div class="quality-img">
             <img src="./assets/hero-screenshot-1.40a097b525c2f8c9808e.png" alt="" class="">
           </div>
-        </div>
       </div>
     </div>
   </section>
@@ -183,8 +202,8 @@
           <img src="./assets/hero-screenshot-2.241aac1fbc66db29d873.png" alt="" class="steps__img">
         </div>
         <div class="steps__info">
-          <h2>STEPS</h2>
-          <h1>Easy to <span class="purple__text">Get Started.</span></h1>
+          <h2 class="section--title">STEPS</h2>
+          <h1 class="section--subject">Easy to <span class="purple__text">Get Started.</span></h1>
           <div class="steps__container">
             <div class="step">
               <div class="step__number">01</div>
@@ -217,9 +236,9 @@
     <div class="container">
       <div class="row values__row">
         <div class="values__info">
-          <h2>Values</h2>
-          <h1>We Always Abide by Our <span class="purple__text">Principles.</span></h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto officiis voluptatem saepe. Sit nam
+          <h2 class="section--title">Values</h2>
+          <h1 class="section--subject">We Always Abide by Our <span class="purple__text">Principles.</span></h1>
+          <p class="section--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto officiis voluptatem saepe. Sit nam
             cumque, harum sint mollitia quasi omnis tempora libero, dolores fugiat, ad eaque repellendus maxime
             doloremque ipsum!</p>
           <div class="values__container">
@@ -254,7 +273,7 @@
                 designers.</p>
             </div>
           </div>
-          <button class="values__button">Learn More</button>
+          <button class="values__button purple__button">Learn More</button>
         </div>
         <figure class="values__img">
           <img src="./assets/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg" alt="">
@@ -330,9 +349,9 @@
         </div>
         <div class="testimonial__info">
           <div class="testimonial__title">
-            <h2>TESTIMONIALS</h2>
-            <h1>Our Clients <span class="purple__text">Love Us.</span></h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium vel, in ducimus quaerat numquam
+            <h2 class="section--title">TESTIMONIALS</h2>
+            <h1 class="section--subject">Our Clients <span class="purple__text">Love Us.</span></h1>
+            <p class="section--para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium vel, in ducimus quaerat numquam
               aliquid ratione illum molestiae velit animi.</p>
           </div>
           <div class="testimonial">
@@ -476,35 +495,35 @@
       <div class="row">
         <div class="company__info">
           <div class="company__info--column">
-            <h5>MAIN</h5>
+            <h5 class="company__info-title">MAIN</h5>
             <a href="" class="company__info--link">Blog</a>
             <a href="" class="company__info--link">FAQs</a>
             <a href="" class="company__info--link">Support</a>
             <a href="" class="company__info--link">About Us</a>
           </div>
           <div class="company__info--column">
-            <h5>PRODUCT</h5>
+            <h5 class="company__info-title">PRODUCT</h5>
             <a href="" class="company__info--link">Log In</a>
             <a href="" class="company__info--link">Personal</a>
             <a href="" class="company__info--link">Business</a>
             <a href="" class="company__info--link">Team</a>
           </div>
           <div class="company__info--column">
-            <h5>Press</h5>
+            <h5 class="company__info--title">Press</h5>
             <a href="" class="company__info--link">Logos</a>
             <a href="" class="company__info--link">Events</a>
             <a href="" class="company__info--link">Stories</a>
             <a href="" class="company__info--link">Office</a>
           </div>
           <div class="company__info--column">
-            <h5>TEAM</h5>
+            <h5 class="company__info-title">TEAM</h5>
             <a href="" class="company__info--link">Career</a>
             <a href="" class="company__info--link">Founders</a>
             <a href="" class="company__info--link">Culture</a>
             <a href="" class="company__info--link">Onboarding</a>
           </div>
           <div class="company__info--column">
-            <h5>LEGAL</h5>
+            <h5 class="company__info-title">LEGAL</h5>
             <a href="" class="company__info--link">GDPR</a>
             <a href="" class="company__info--link">Privacy Policy</a>
             <a href="" class="company__info--link">Terms of Service</a>
