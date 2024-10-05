@@ -16,6 +16,12 @@ section {
   height: 100vh;
 }
 
+/*  DIV ADDED BY GITHUB AFTER DEPLOYED */
+
+#loom-companion-mv3 {
+  display: none;
+}
+
 @keyframes slide-right {
   0% {
       transform: translateX(-2000px);
