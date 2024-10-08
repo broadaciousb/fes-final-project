@@ -17,7 +17,6 @@ section {
 }
 
 /*  DIV ADDED BY GITHUB AFTER DEPLOYED */
-
 #loom-companion-mv3 {
   display: none;
 }
@@ -91,28 +90,6 @@ a {
   position: relative;
 }
 
-.link__hover-effect:after {
-  content: "";
-  position: absolute;
-  height: 3px;
-  width: 0%;
-  bottom: -3px;
-  transition: all 300ms ease;
-}
-
-.link__hover-effect--purple:after {
-  color: #6415ff;
-  background-color: #6415ff;
-}
-
-.link__hover-effect--white:after {
-  color: white;
-  background-color: white;
-}
-
-.link__hover-effect:hover:after {
-  width: 100%;
-}
 
 button {
   border-radius: 999px;
@@ -160,6 +137,10 @@ img {
   font-size: 40px;
   text-align: center;
   border: none;
+  color: #243e63;
+}
+
+.btn__menu:hover {
   color: #6415ff;
 }
 
@@ -167,9 +148,9 @@ img {
   position: fixed;
   background-color: white;
   border: 1px solid rgb(226, 232, 240);
-  top: 0;
-  left: 0;
-  width: 100vw;
+  top: 24px;
+  left: 24px;
+  right: 24px;
   height: 50vh;
   z-index: 100;
   display: flex;
@@ -187,9 +168,9 @@ img {
 
 .btn__menu--close {
   position: absolute;
-  right: 20px;
-  top: 20px;
-  padding: 32px;
+  right: 10px;
+  top: 26px;
+  padding: 0;
   color: black;
 }
 
@@ -198,6 +179,7 @@ img {
   flex-direction: column;
   align-items: center;
   font-weight: 600;
+  position: relative;
 }
 
 .menu__list {
@@ -207,6 +189,10 @@ img {
 .menu__link {
   font-size: 18px;
   color: black;
+}
+
+.menu__link:hover {
+  color:#6415ff;
 }
 
 /* LANDING */
@@ -266,6 +252,25 @@ img {
   width: 100%;
 }
 
+.menu__link:after,
+.nav__link:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #6415ff;
+  width: 0;
+  bottom: -8px;
+  right: 0;
+  transition: all 400ms ease;
+}
+
+.menu__link:hover:after,
+.nav__link:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.menu__link:hover,
 .nav__link:hover {
   color:#6415ff;
 }
@@ -277,10 +282,13 @@ img {
   width: 100%;
 }
 
+.login__link {
+  padding-right: 24px;
+}
+
 
 .nav__button {
   padding: 12px 32px;
-  margin-left: 24px;
   font-weight: 600;
 }
 
@@ -1069,14 +1077,30 @@ footer {
   width: 20%;
 }
 
+.footer__li {
+  padding-bottom: 16px;
+}
+
 .company__info--link {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  font-size: 14px;
   color: white;
+  text-decoration: none;
   position: relative;
+}
+
+.company__info--link:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: white;
+  width: 0;
+  bottom: -8px;
+  right: 0;
+  transition: all 400ms ease;
+}
+
+.company__info--link:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 .footer__list {
