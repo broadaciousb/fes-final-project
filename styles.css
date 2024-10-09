@@ -694,15 +694,15 @@ img {
   flex-wrap: wrap;
   margin-top: 32px;
   width: 100%;
-  position: relative;
 }
 
 .price__plans-highlight--container {
   display: flex;
-  position: relative;
-  bottom: 120px;
+  position: absolute;
+  bottom: -130px;
   left: -120px;
   opacity: 0.25;
+  z-index: 1;
 }
 
 .price__plans-highlight {
@@ -741,6 +741,11 @@ img {
 
 .plan__detail {
   margin-top: 20px;
+}
+
+.left__plan {
+  position: relative;
+  z-index: 2;
 }
 
 .center__plan {
@@ -1223,6 +1228,8 @@ footer {
   color: black;
   background-color: white;
   border-radius: 50%;
+  width: 40px;
+  height: 40px;
   padding: 12px;
   margin: 0 8px;
 }
