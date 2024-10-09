@@ -97,7 +97,7 @@ button {
   font-size: 14px;
   font-weight: 700;
   border-width: 0;
-  transition: background-color 300ms ease;
+  transition: background-color 400ms ease;
   cursor: pointer;
 }
 
@@ -377,10 +377,6 @@ img {
 
 #features {
   animation: slide-left 800ms;
-}
-
-#features:after {
-
 }
 
 .features__highlight--container {
@@ -807,6 +803,7 @@ img {
   margin: 32px 64px;
   padding: 16px 32px;
   width: 75%;
+  transition: all 400ms ease;
 }
 
 .left__plan--button:hover,
