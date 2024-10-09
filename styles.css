@@ -1234,6 +1234,10 @@ footer {
   margin: 0 8px;
 }
 
+.social__link:hover {
+  background-color: rgb(203 213 224 );
+}
+
 /*  SMALL LAPTOPS LARGE TABLETS  */
 
 @media (max-width: 1050px) {
