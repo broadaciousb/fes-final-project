@@ -1036,6 +1036,11 @@ img {
   border-radius: 8px;
 }
 
+.question:hover {
+  background-color: rgb(226 232 240);
+  color: rgb(26 32 44);
+}
+
 /*  GET STARTED  */
 
 .get__started--row {
