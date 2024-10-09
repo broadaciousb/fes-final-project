@@ -383,12 +383,17 @@ img {
 
 }
 
-.features__highlight {
+.features__highlight--container {
   position: absolute;
-  right: -120px;
-  bottom: -1100px;
+  right: -100px;
+  bottom: -900px;
   opacity: 0.25;
-  width: 30%;
+}
+
+.features__highlight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .features__row {
@@ -1220,6 +1225,10 @@ footer {
     height: 100%;
   }
 
+  .features__highlight--container {
+    bottom: -1100px;
+  }
+
   .feature {
     width: 50%;
   }
@@ -1348,6 +1357,10 @@ footer {
     margin-top: 16px;
   }
 
+
+  .features__highlight--container {
+    bottom: -1000px;
+  }
   
 
   .get__started--description {
@@ -1392,12 +1405,14 @@ footer {
 
 /* PHONES  */
 
-@media (max-width: 550px) {
+@media (max-width: 560px) {
   #facts {
     height: 100%;
   }
 
-  
+  .features__highlight--container {
+    bottom: -1570px;
+  }
 
   .feature {
     width: 100%;
