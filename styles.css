@@ -694,6 +694,21 @@ img {
   flex-wrap: wrap;
   margin-top: 32px;
   width: 100%;
+  position: relative;
+}
+
+.price__plans-highlight--container {
+  display: flex;
+  position: relative;
+  bottom: 120px;
+  left: -120px;
+  opacity: 0.25;
+}
+
+.price__plans-highlight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .plan__wrapper {
@@ -961,6 +976,32 @@ img {
 
 #facts {
   animation: slide-left 800ms;
+  position: relative;
+}
+
+.facts__highlight-1-wrapper {
+  position: absolute;
+  width: 225px;
+  top: -25px;
+  right: -125px;
+  color: rgb(79 209 197);
+  opacity: 0.15;
+}
+
+.facts__highlight-2-wrapper {
+  position: absolute;
+  width: 275px;
+  bottom: 20px;
+  left: -150px;
+  color: #6415ff;
+  opacity: 0.15;
+}
+
+.facts__highlight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .facts__title {
