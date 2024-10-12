@@ -727,6 +727,17 @@ img {
   z-index: 10;
 }
 
+.plan__feature,
+.plan__for,
+.plan__detail,
+.plan__buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
 .plan__feature {
   padding: 32px;
 }
@@ -740,9 +751,6 @@ img {
 }
 
 .plan__buy {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   background-color: white;
   border-radius: 8px;
@@ -1259,6 +1267,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 2;
 }
 
 .social__link {
