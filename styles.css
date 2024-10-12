@@ -723,6 +723,8 @@ img {
   max-width: 400px;
   border: 1px solid rgb(226, 232, 240);
   border-radius: 8px;
+  background-color: white;
+  z-index: 10;
 }
 
 .plan__feature {
@@ -737,12 +739,22 @@ img {
   margin-top: 20px;
 }
 
-.left__plan {
-  position: relative;
+.plan__buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
   z-index: 2;
 }
 
-.center__plan {
+.left__plan {
+  position: relative;
+}
+
+.center__plan,
+.plan__buy--center {
   background-image: linear-gradient(
     135deg,
     rgb(76, 81, 191) 0%,
@@ -800,7 +812,7 @@ img {
 .right__plan--button {
   margin: 32px 64px;
   padding: 16px 32px;
-  width: 75%;
+  width: 50%;
   transition: all 400ms ease;
 }
 
@@ -991,6 +1003,7 @@ img {
   left: -150px;
   color: #6415ff;
   opacity: 0.15;
+  z-index: 1;
 }
 
 .facts__highlight {
@@ -1025,6 +1038,7 @@ img {
   padding: 16px 40px;
   background-color: #edf2f7;
   border-radius: 8px;
+  z-index: 2;
 }
 
 .question:hover {
@@ -1134,6 +1148,35 @@ footer {
   width: 100%;
   padding: 0 32px;
   animation: slide-left 800ms;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer__highlight-1-wrapper,
+.footer__highlight-2-wrapper {
+  position: absolute;
+  color: rgb(80 17 204);
+  opacity: 0.5;
+  z-index: 2;
+}
+
+.footer__highlight-1-wrapper {
+  position: absolute;
+  top: -120px;
+  left: -70px;
+}
+
+.footer__highlight-2-wrapper {
+  position: absolute;
+  bottom: -160px;
+  right: -120px;
+}
+
+.footer__highlight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .company__info {
@@ -1141,7 +1184,7 @@ footer {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  padding: 64px 0px;
+  padding: 80px 0px 32px;
   max-width: 1200px;
 }
 
@@ -1151,6 +1194,7 @@ footer {
   justify-content: space-around;
   align-items: left;
   width: 20%;
+  z-index: 3;
 }
 
 .footer__li {
@@ -1389,6 +1433,12 @@ footer {
     width: 100%;
     margin-bottom: 64px;
   }
+
+  .left__plan--button,
+.center__plan--button,
+.right__plan--button {
+  width: 60%;
+}
 
   .testimonial {
     align-items: center;
