@@ -23,19 +23,19 @@ section {
 
 @keyframes slide-right {
   0% {
-      transform: translateX(-2000px);
+    transform: translateX(-2000px);
   }
   100% {
-      transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
 @keyframes slide-left {
   0% {
-      transform: translateX(2000px);
+    transform: translateX(2000px);
   }
   100% {
-      transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
@@ -89,7 +89,6 @@ a {
   text-decoration: none;
   position: relative;
 }
-
 
 button {
   border-radius: 999px;
@@ -192,7 +191,7 @@ img {
 }
 
 .menu__link:hover {
-  color:#6415ff;
+  color: #6415ff;
 }
 
 /* LANDING */
@@ -272,7 +271,7 @@ img {
 
 .menu__link:hover,
 .nav__link:hover {
-  color:#6415ff;
+  color: #6415ff;
 }
 
 .sign-in__login--links {
@@ -285,7 +284,6 @@ img {
 .login__link {
   padding-right: 24px;
 }
-
 
 .nav__button {
   padding: 12px 32px;
@@ -330,10 +328,14 @@ img {
   border-style: solid;
   border-width: 2px;
   border-radius: 999px;
-  border-color: rgba(160, 174, 192);
+  border-color: rgb(229, 231, 235);
   font-size: 100%;
   font-weight: 500;
-  opacity: 0.5;
+  transition: border-color 400ms ease;
+}
+
+.header__email-input:hover {
+  border-color: rgba(160, 174, 192);
 }
 
 .email__button {
@@ -449,10 +451,6 @@ img {
   max-width: 200px;
   text-align: left;
 }
-
-
-
-
 
 /* QUALITY */
 
@@ -809,14 +807,10 @@ img {
 .left__plan--button:hover,
 .center__plan--button:hover,
 .right__plan--button:hover {
-  --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-    0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),
-    0 10px 10px -5px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  translate: 1px -1px;
-  opacity: 0.75;
+  transform: translate(1px, -1px);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 .left__plan--highlight,
@@ -1227,7 +1221,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
+  color: #243e63;
   background-color: white;
   border-radius: 50%;
   width: 40px;
@@ -1237,7 +1231,7 @@ footer {
 }
 
 .social__link:hover {
-  background-color: rgb(203 213 224 );
+  background-color: rgb(203 213 224);
 }
 
 /*  SMALL LAPTOPS LARGE TABLETS  */
@@ -1373,7 +1367,6 @@ footer {
     flex-direction: column-reverse;
     justify-content: space-between;
     align-items: center;
-    
   }
 
   .value {
@@ -1444,13 +1437,9 @@ footer {
     margin-top: 16px;
   }
 
-
   .features__highlight--container {
     bottom: -1000px;
   }
-  
-
-
 
   .company__info {
     padding: 32px 0;
@@ -1514,8 +1503,6 @@ footer {
   h3 {
     font-size: 16px;
   }
-
-  
 
   h4 {
     font-size: 18px;
